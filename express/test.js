@@ -1,3 +1,3 @@
-path = require('path')
-p = path.join(__dirname)
-console.log(__dirname)
+fs = require('fs')
+
+fs.readFile('static/index.html').then(res=> 1)
