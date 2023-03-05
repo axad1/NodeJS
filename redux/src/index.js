@@ -1,13 +1,7 @@
-require('./style.css')
-image = require('./updates.png')
+store = require('./store')
+actions = require('./actions')
 
-root = document.getElementById('root')
-h1 = document.createElement("h1")
-h1.innerText = 'Hello world'
-root.appendChild(h1)
 
-root.classList.add('hello')
-
-myImage = new Image()
-myImage.src = image
-root.appendChild(myImage)
+store.dispatch(actions.bugAdded(3, "Hello"))
+store.dispatch(actions.bugResolved(3))
+store.dispatch(actions.bugRemoved(3))
