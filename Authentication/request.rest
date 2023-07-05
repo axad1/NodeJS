@@ -1,5 +1,6 @@
 
 GET http://localhost:3000/users
+# authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXNhZCIsImlhdCI6MTY4NTM4NDM4MH0.Be0f6wkqlhqyt9kaTwq-V4OTeGsOIkv6M101yLSUYxA
 
 ###
 
@@ -9,6 +10,15 @@ Content-Type: application/json
 {
   "name": "Asad",
   "password": "1234"
+}
+
+###
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXNhZCIsImhhc2hlZFBhc3N3b3JkIjoiJDJiJDEwJEdyTm94L3pLd0x3TVJQV1ZUZFo5L080YWx4dUV3N01EOFJBT2wzRC9rSEl4NzcwbFRsb0R1IiwiaWF0IjoxNjg1Mzg3Mjc3fQ.jJfUx64fIeiubfBakQOr9o6wcsGW_zrou2MyeEBZSWo"
 }
 
 ###
